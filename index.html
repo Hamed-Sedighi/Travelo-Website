@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+
+        <nav class="header">
+            <ul class="header-menu" id="menu">
+                <li class="menu-item">Home</li>
+                <li class="menu-item">About</li>
+                <li class="menu-item">Destination</li>
+                <li class="menu-item">Pages</li>
+                <li class="menu-item">Blog</li>
+                <li class="menu-item">Contact</li>
+
+            </ul>
+        </nav>
+        <div>
+            <div class="search-icon">
+                <a href="#"><i class="fa fa-search"></i></a>
+            </div>
+            <div class="drop-down-menu">
+                <a href="#"><i class="fa fa-bars" onclick="showMenu()"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slider-text">
+                <h3>Australia</h3>
+                <P>Lorem ipsum dolor sit amet consectetur.</P>
+                <a href="#" class="slider-btn">Explore Now</a>
+            </div>
+        </section>
+
+
+
+        <section class="search-bar">
+
+            <h3>Where you want to go?</h3>
+
+            <form action="#" class="search-form">
+                <input type="text" placeholder="where to go?">
+                <input type="text" placeholder="where to go?">
+                <input type="text" placeholder="where to go?">
+                <button class="search-btn" type="submit">search</button>
+            </form>
+
+        </section>
+
+        <section class="popular">
+
+
+            <section class="popular-heading">
+                <h3 class="popular-title">Popular Destination</h3>
+                <p class="popular-destination">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est
+                    doloremque ex nisi sequi dolor.</p>
+            </section>
+
+
+
+
+
+
+            <section class="popular-container">
+
+
+
+                <article>
+                    <img src="images/1.png" alt="">
+                    <div class="popular-imge-info">
+                        <p>Italy <a href="#">07 places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/2.png" alt="">
+                    <div class="popular-imge-info">
+                        <p>Brazil <a href="#">03 places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/3.png" alt="">
+                    <div class="popular-imge-info">
+                        <p>America <a href="#">10 places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/4.png" alt="">
+                    <div class="popular-imge-info">
+                        <p>Nepal <a href="#">02 places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/5.png" alt="">
+                    <div class="popular-imge-info">
+                        <p>Maldives <a href="#">02 places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/6.png" alt="">
+                    <div class="popular-imge-info">
+                        <p>Maldives <a href="#">02 places</a></p>
+                    </div>
+                </article>
+
+
+            </section>
+
+
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h4>Subscribe Our Newslette</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste!</p>
+                </div>
+
+                <div class="mail-form">
+                    <input type="email" placeholder="Your Mail">
+                    <button class="newsletter-btn" type="submit">Subscribe</button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="video">
+            <div class="video-container">
+                <h3>Enjoy Video</h3>
+                <div class="video-button">
+                    <a href="#">
+                        <i class="fa fa-play"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="left-footer">
+            <img src="images/footer_logo.png" alt="" class="footer-img">
+            <ul class="footer-info">
+                <li>5th flora, 700/D kings road, green</li>
+                <li>Lane New Yourk-1782</li>
+                <li>+10 367 826 2567</li>
+                <li>contact@carpenter.com</li>
+            </ul>
+        </div>
+
+
+        <div class="right-footer">
+            <h3 class="footer-title">Popular Destination</h3>
+            <ul class="links">
+                <li>
+                    <a href="#">Indonesia</a>
+                </li>
+                <li>
+                    <a href="#">India</a>
+                </li>
+                <li>
+                    <a href="#">Italy</a>
+                </li>
+                <li>
+                    <a href="#">Franch</a>
+                </li>
+                <li>
+                    <a href="#">America</a>
+                </li>
+                <li>
+                    <a href="#">Switzerland</a>
+                </li>
+                <li>
+                    <a href="#">Canada</a>
+                </li>
+                <li>
+                    <a href="#">England</a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+        function showMenu() {
+            let menu = document.getElementById("menu");
+            if (menu.className === "header-menu") {
+                menu.className += " show";
+            }
+            else {
+                menu.className = "header-menu";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
